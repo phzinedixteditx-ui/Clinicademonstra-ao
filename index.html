@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Harmony | Policlínica em Boa Vista - RR</title>
+    <meta name="description" content="Clínica Harmony em Boa Vista, Roraima. Consulte informações de atendimento, localização e contato.">
+    <meta name="author" content="Clínica Harmony">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maps.app.goo.gl/XAr6tsk4i6M8VhqW9">
+    <meta property="og:title" content="Clínica Harmony | Policlínica em Boa Vista - RR">
+    <meta property="og:description" content="Uma clínica localizada no Centro de Boa Vista, preparada para receber seus pacientes com um espaço amplo e acolhedor.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=85">
+
+    <!-- Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome 6 Free Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            200: '#bae0fd',
+                            300: '#7cc8fc',
+                            400: '#36affa',
+                            500: '#0c92eb',
+                            600: '#0274c7',
+                            700: '#035ca3',
+                            800: '#074f85',
+                            900: '#0b426f',
+                            950: '#072a4a',
+                        },
+                        navy: {
+                            800: '#0f2238',
+                            900: '#0b192c',
+                            950: '#060f1c',
+                        },
+                        petroleum: {
+                            500: '#0e4a6e',
+                            600: '#0c3b58',
+                            700: '#092d44',
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(15, 23, 42, 0.05)',
+                        'card': '0 10px 30px -5px rgba(15, 34, 56, 0.08)',
+                        'floating': '0 20px 40px -15px rgba(11, 25, 44, 0.12)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Schema.org JSON-LD (MedicalBusiness) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Clínica Harmony",
+      "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=85",
+      "telephone": "(95) 3224-3579",
+      "url": "https://maps.app.goo.gl/XAr6tsk4i6M8VhqW9",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Getúlio Vargas, 5272 - Centro",
+        "addressLocality": "Boa Vista",
+        "addressRegion": "RR",
+        "postalCode": "69301-030",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 2.8227394,
+        "longitude": -60.6713667
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.1",
+        "reviewCount": "22"
+      }
+    }
+    </script>
+
+    <style>
+        /* Fade-in Scroll Animations */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Focus rings for accessibility */
+        a:focus-visible, button:focus-visible {
+            outline: 2px solid #0274c7;
+            outline-offset: 3px;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f8fafc;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="font-sans bg-[#F8FAFC] text-slate-800 antialiased selection:bg-brand-100 selection:text-brand-900">
+
+    <!-- Header Navigation -->
+    <header id="top-header" class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo (Textual) -->
+            <a href="#inicio" class="flex items-center gap-3 group focus:outline-none" aria-label="Clínica Harmony - Voltar ao início">
+                <div class="w-10 h-10 rounded-xl bg-navy-900 flex items-center justify-center text-white shadow-md shadow-navy-900/10 transition-transform duration-300 group-hover:scale-105">
+                    <i class="fa-solid fa-hospital text-brand-400 text-lg"></i>
+                </div>
+                <div class="flex flex-col leading-none">
+                    <span class="text-[10px] font-bold tracking-[0.2em] text-slate-500 uppercase">CLÍNICA</span>
+                    <span class="text-xl font-extrabold text-navy-900 tracking-tight group-hover:text-brand-700 transition-colors">HARMONY</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600" aria-label="Menu principal">
+                <a href="#inicio" class="hover:text-navy-900 transition-colors duration-200 py-1">Início</a>
+                <a href="#sobre" class="hover:text-navy-900 transition-colors duration-200 py-1">A Clínica</a>
+                <a href="#atendimento" class="hover:text-navy-900 transition-colors duration-200 py-1">Atendimento</a>
+                <a href="#avaliacoes" class="hover:text-navy-900 transition-colors duration-200 py-1">Avaliações</a>
+                <a href="#localizacao" class="hover:text-navy-900 transition-colors duration-200 py-1">Localização</a>
+            </nav>
+
+            <!-- Right CTA Button (Desktop) -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="tel:+559532243579" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-navy-900 hover:bg-slate-800 text-white font-semibold text-sm transition-all duration-200 shadow-soft hover:shadow-card active:scale-[0.98]">
+                    <i class="fa-solid fa-phone text-xs text-brand-300"></i>
+                    <span>Entrar em contato</span>
+                </a>
+            </div>
+
+            <!-- Hamburger Button (Mobile) -->
+            <button id="mobile-menu-btn" type="button" class="md:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none" aria-label="Abrir menu de navegação" aria-expanded="false">
+                <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Drawer Overlay -->
+        <div id="mobile-menu-drawer" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-4 shadow-xl transition-all duration-300">
+            <nav class="flex flex-col space-y-3 font-medium text-slate-700">
+                <a href="#inicio" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-slate-50 hover:text-navy-900">Início</a>
+                <a href="#sobre" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-slate-50 hover:text-navy-900">A Clínica</a>
+                <a href="#atendimento" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-slate-50 hover:text-navy-900">Atendimento</a>
+                <a href="#avaliacoes" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-slate-50 hover:text-navy-900">Avaliações</a>
+                <a href="#localizacao" class="mobile-nav-link px-3 py-2 rounded-lg hover:bg-slate-50 hover:text-navy-900">Localização</a>
+            </nav>
+            <div class="pt-2 border-t border-slate-100 flex flex-col gap-2">
+                <a href="tel:+559532243579" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-navy-900 text-white font-semibold text-sm shadow-md">
+                    <i class="fa-solid fa-phone text-xs text-brand-300"></i>
+                    <span>Entrar em contato</span>
+                </a>
+                <a href="https://maps.app.goo.gl/XAr6tsk4i6M8VhqW9" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-medium text-sm">
+                    <i class="fa-solid fa-location-dot text-brand-600"></i>
+                    <span>Ver localização no mapa</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- HERO SECTION -->
+        <section id="inicio" class="relative pt-10 pb-20 md:pt-16 md:pb-28 overflow-hidden bg-gradient-to-b from-white via-slate-50 to-[#F8FAFC]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                    
+                    <!-- Left Column (Text & CTAs) -->
+                    <div class="lg:col-span-7 space-y-8 reveal-on-scroll">
+                        <!-- Eyebrow Badge -->
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 border border-slate-200/80 text-navy-900 text-xs font-bold tracking-wider uppercase">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            <span>CLÍNICA HARMONY</span>
+                        </div>
+
+                        <!-- Main Headline -->
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-navy-900 tracking-tight leading-[1.15]">
+                            Cuidado, confiança e atendimento em um só lugar.
+                        </h1>
+
+                        <!-- Subtitle -->
+                        <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+                            Uma clínica localizada no Centro de Boa Vista, preparada para receber seus pacientes com um espaço amplo e acolhedor.
+                        </p>
+
+                        <!-- CTA Buttons Group -->
+                        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                            <!-- Primary Button (tel:) -->
+                            <a href="tel:+559532243579" class="inline-flex items-center justify-center gap-3 px-7 py-4 rounded-xl bg-navy-900 hover:bg-slate-800 text-white font-semibold text-base transition-all duration-200 shadow-card hover:shadow-floating active:scale-[0.98]">
+                                <i class="fa-solid fa-phone text-sm text-brand-300"></i>
+                                <span>Entrar em contato</span>
+                            </a>
+                            
+                            <!-- Secondary Button (Google Maps) -->
+                            <a href="https://maps.app.goo.gl/XAr6tsk4i6M8VhqW9" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-semibold text-base border border-slate-200/90 transition-all duration-200 shadow-soft hover:border-slate-300">
+                                <i class="fa-solid fa-map-location-dot text-brand-600"></i>
+                                <span>Ver localização</span>
+                            </a>
+                        </div>
+
+                        <!-- Rating Badge (Discrete) -->
+                        <div class="pt-4 flex items-center gap-4 border-t border-slate-200/60">
+                            <div class="flex items-center gap-1 text-amber-500 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="font-bold text-slate-900 text-base ml-1">4,1</span>
+                            </div>
+                            <span class="w-1 h-1 rounded-full bg-slate-300"></span>
+                            <span class="text-sm font-medium text-slate-500">22 avaliações públicas</span>
+                            <span class="w-1 h-1 rounded-full bg-slate-300"></span>
+                            <span class="text-sm font-medium text-emerald-700 bg-emerald-50 border border-emerald-200/60 px-2.5 py-0.5 rounded-md flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                                Aberto agora
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Right Column (Sophisticated Image Composition) -->
+                    <div class="lg:col-span-5 reveal-on-scroll" style="transition-delay: 150ms;">
+                        <div class="relative mx-auto max-w-md lg:max-w-none">
+                            <!-- Background Subtle Framing -->
+                            <div class="absolute -inset-2 rounded-3xl bg-slate-200/50 -rotate-1 blur-sm"></div>
+                            
+                            <!-- Card Container -->
+                            <div class="relative rounded-2xl overflow-hidden shadow-card border border-slate-200/80 bg-white">
+                                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=85" 
+                                     alt="Ambiente moderno da recepção e instalações da Clínica Harmony" 
+                                     class="w-full h-[380px] sm:h-[440px] object-cover hover:scale-105 transition-transform duration-700"
+                                     loading="eager"
+                                     width="1000"
+                                     height="800">
+                                
+                                <!-- Subtle Image Overlay Footer -->
+                                <div class="p-4 bg-white/95 backdrop-blur-sm border-t border-slate-100 flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center text-brand-700">
+                                            <i class="fa-solid fa-building-user text-xs"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-xs font-bold text-navy-900">Centro de Boa Vista</p>
+                                            <p class="text-[11px] text-slate-500">Av. Getúlio Vargas, 5272</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-[11px] font-medium text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">Policlínica</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO — SOBRE A CLÍNICA -->
+        <section id="sobre" class="py-20 md:py-28 bg-white border-y border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                    
+                    <!-- Left Column: Sophisticated Interior Photography -->
+                    <div class="lg:col-span-6 order-2 lg:order-1 reveal-on-scroll">
+                        <div class="relative">
+                            <div class="rounded-2xl overflow-hidden shadow-card border border-slate-100 bg-slate-50">
+                                <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1000&q=85" 
+                                     alt="Sala de espera e espaço amplo de atendimento da Clínica Harmony" 
+                                     class="w-full h-[360px] sm:h-[420px] object-cover"
+                                     loading="lazy"
+                                     width="1000"
+                                     height="800">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Editorial Text Content -->
+                    <div class="lg:col-span-6 order-1 lg:order-2 space-y-6 reveal-on-scroll" style="transition-delay: 100ms;">
+                        <span class="text-xs font-bold tracking-widest text-slate-400 uppercase">A CLÍNICA</span>
+                        
+                        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-900 tracking-tight leading-tight">
+                            Um espaço pensado para receber você
+                        </h2>
+
+                        <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                            A Clínica Harmony está localizada em uma região central de Boa Vista, oferecendo um espaço amplo e uma sala de espera preparada para receber seus pacientes.
+                        </p>
+
+                        <!-- Discrete Visual Highlights (Non-medical promises) -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/60">
+                                <div class="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-navy-900 mb-3 border border-slate-100">
+                                    <i class="fa-solid fa-location-dot text-sm text-brand-600"></i>
+                                </div>
+                                <h3 class="text-sm font-bold text-navy-900">Localização central</h3>
+                                <p class="text-xs text-slate-500 mt-1">Fácil acesso na Av. Getúlio Vargas</p>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/60">
+                                <div class="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-navy-900 mb-3 border border-slate-100">
+                                    <i class="fa-solid fa-expand text-sm text-brand-600"></i>
+                                </div>
+                                <h3 class="text-sm font-bold text-navy-900">Espaço amplo</h3>
+                                <p class="text-xs text-slate-500 mt-1">Estrutura física bem distribuída</p>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/60">
+                                <div class="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center text-navy-900 mb-3 border border-slate-100">
+                                    <i class="fa-solid fa-couch text-sm text-brand-600"></i>
+                                </div>
+                                <h3 class="text-sm font-bold text-navy-900">Ambiente de atendimento</h3>
+                                <p class="text-xs text-slate-500 mt-1">Recepção confortável e organizada</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO — ATENDIMENTO -->
+        <section id="atendimento" class="py-20 md:py-28 bg-[#F8FAFC]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-navy-900 rounded-3xl p-8 sm:p-12 lg:p-16 text-white shadow-floating relative overflow-hidden reveal-on-scroll">
+                    <!-- Subtle Background Aesthetic Accent -->
+                    <div class="absolute -right-16 -bottom-16 w-80 h-80 rounded-full bg-brand-600/10 blur-3xl pointer-events-none"></div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+                        <div class="lg:col-span-7 space-y-6">
+                            <span class="inline-block px-3 py-1 rounded-md bg-white/10 text-brand-200 text-xs font-bold tracking-wider uppercase backdrop-blur-sm">
+                                INFORMAÇÕES DE ATENDIMENTO
+                            </span>
+
+                            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-tight">
+                                Atendimento
+                            </h2>
+
+                            <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl">
+                                Para informações sobre consultas, especialidades disponíveis e horários de atendimento, entre em contato diretamente com a Clínica Harmony.
+                            </p>
+
+                            <div class="pt-2">
+                                <a href="tel:+559532243579" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-white hover:bg-slate-100 text-navy-900 font-bold text-base transition-all duration-200 shadow-md active:scale-[0.98]">
+                                    <i class="fa-solid fa-phone text-brand-600"></i>
+                                    <span>Falar com a clínica</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Subtle Clinical Detail Visual -->
+                        <div class="lg:col-span-5 hidden lg:block">
+                            <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                                <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=85" 
+                                     alt="Ambiente de consulta e recepção médica" 
+                                     class="w-full h-64 object-cover opacity-90 hover:opacity-100 transition-opacity duration-300"
+                                     loading="lazy"
+                                     width="800"
+                                     height="500">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO — AVALIAÇÕES -->
+        <section id="avaliacoes" class="py-20 md:py-28 bg-white border-t border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Section Header -->
+                <div class="text-center max-w-2xl mx-auto space-y-4 reveal-on-scroll">
+                    <span class="text-xs font-bold tracking-widest text-slate-400 uppercase">PROVA SOCIAL</span>
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-900 tracking-tight">
+                        Avaliações dos Pacientes
+                    </h2>
+                    
+                    <!-- Overall Rating Display -->
+                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-slate-50 border border-slate-200/80">
+                        <span class="text-2xl font-black text-navy-900">4,1</span>
+                        <div class="flex items-center gap-1 text-amber-500 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="text-xs font-medium text-slate-500">· 22 avaliações no Google</span>
+                    </div>
+                </div>
+
+                <!-- Testimonials Grid (ONLY REAL REVIEWS FROM BRIEFING) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto">
+                    
+                    <!-- Review 1 -->
+                    <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200/70 shadow-soft relative flex flex-col justify-between reveal-on-scroll" style="transition-delay: 100ms;">
+                        <div class="space-y-4">
+                            <!-- Discrete Quote & Rating Stars -->
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-1 text-amber-500 text-xs">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-3xl text-slate-300 font-serif leading-none">“</span>
+                            </div>
+
+                            <p class="text-slate-700 text-base italic leading-relaxed">
+                                "É uma clínica ótima, excelentes profissionais."
+                            </p>
+                        </div>
+
+                        <div class="pt-6 mt-6 border-t border-slate-200/60 flex items-center justify-between text-xs text-slate-500">
+                            <span class="font-semibold text-slate-700">Paciente — Avaliação Pública</span>
+                            <span class="flex items-center gap-1"><i class="fa-brands fa-google text-slate-400"></i> Google Review</span>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200/70 shadow-soft relative flex flex-col justify-between reveal-on-scroll" style="transition-delay: 200ms;">
+                        <div class="space-y-4">
+                            <!-- Discrete Quote & Rating Stars -->
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-1 text-amber-500 text-xs">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-3xl text-slate-300 font-serif leading-none">“</span>
+                            </div>
+
+                            <p class="text-slate-700 text-base italic leading-relaxed">
+                                "fui a uma consulta com o dr ryan schuler, otima experiencia foi super atencioso"
+                            </p>
+                        </div>
+
+                        <div class="pt-6 mt-6 border-t border-slate-200/60 flex items-center justify-between text-xs text-slate-500">
+                            <span class="font-semibold text-slate-700">Paciente — Avaliação Pública</span>
+                            <span class="flex items-center gap-1"><i class="fa-brands fa-google text-slate-400"></i> Google Review</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO — LOCALIZAÇÃO -->
+        <section id="localizacao" class="py-20 md:py-28 bg-[#F8FAFC] border-t border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Section Header -->
+                <div class="max-w-2xl mb-12 reveal-on-scroll">
+                    <span class="text-xs font-bold tracking-widest text-slate-400 uppercase">ONDE ENCONTRAR</span>
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-900 tracking-tight mt-2">
+                        Estamos em Boa Vista
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                    
+                    <!-- Left Details Block -->
+                    <div class="lg:col-span-5 bg-white rounded-2xl p-8 border border-slate-200/80 shadow-card flex flex-col justify-between space-y-8 reveal-on-scroll">
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-3 pb-4 border-b border-slate-100">
+                                <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-navy-900">
+                                    <i class="fa-solid fa-hospital text-brand-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-extrabold text-navy-900">Clínica Harmony</h3>
+                                    <p class="text-xs text-slate-500 font-medium">Policlínica no Centro de Boa Vista</p>
+                                </div>
+                            </div>
+
+                            <!-- Address Detail -->
+                            <div class="space-y-4 text-slate-700 text-sm">
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-location-dot text-brand-600 mt-1"></i>
+                                    <div>
+                                        <p class="font-semibold text-slate-900">Endereço:</p>
+                                        <p>Av. Getúlio Vargas, 5272 - Centro</p>
+                                        <p>Boa Vista - RR, 69301-030</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-phone text-brand-600 mt-1"></i>
+                                    <div>
+                                        <p class="font-semibold text-slate-900">Telefone:</p>
+                                        <a href="tel:+559532243579" class="text-navy-900 font-bold hover:underline">(95) 3224-3579</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-hashtag text-brand-600 mt-1"></i>
+                                    <div>
+                                        <p class="font-semibold text-slate-900">Código de Localização (Plus Code):</p>
+                                        <p class="font-mono text-xs text-slate-600 bg-slate-100 px-2 py-1 rounded inline-block mt-0.5">R8FM+39 Centro, Boa Vista - RR</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-clock text-brand-600 mt-1"></i>
+                                    <div>
+                                        <p class="font-semibold text-slate-900">Horário Informado:</p>
+                                        <p class="text-slate-600">Aberto — fecha às 20:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Directions CTA Button -->
+                        <div class="pt-4 border-t border-slate-100">
+                            <a href="https://maps.app.goo.gl/XAr6tsk4i6M8VhqW9" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-navy-900 hover:bg-slate-800 text-white font-bold text-sm transition-all duration-200 shadow-soft">
+                                <i class="fa-solid fa-diamond-turn-right text-brand-300"></i>
+                                <span>Como chegar</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Integrated Google Maps -->
+                    <div class="lg:col-span-7 bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-card min-h-[380px] relative reveal-on-scroll" style="transition-delay: 150ms;">
+                        <!-- Google Maps Embed Iframe -->
+                        <iframe 
+                            title="Mapa da Clínica Harmony em Boa Vista - RR"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.977359309219!2d-60.6713667!3d2.8227394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d93067321f457ad%3A0x71339ebf7f657929!2sClinica%20Harmony!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; min-height: 400px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="w-full h-full min-h-[400px]">
+                        </iframe>
+
+                        <!-- Map Quick Action Floating Overlay -->
+                        <div class="absolute bottom-4 left-4 right-4 sm:left-auto sm:right-4 bg-white/95 backdrop-blur-md p-3.5 rounded-xl shadow-lg border border-slate-200 flex items-center justify-between gap-4">
+                            <div class="text-xs">
+                                <p class="font-bold text-navy-900">Ver no Google Maps</p>
+                                <p class="text-slate-500">Av. Getúlio Vargas, 5272</p>
+                            </div>
+                            <a href="https://maps.app.goo.gl/XAr6tsk4i6M8VhqW9" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs transition-colors shrink-0">
+                                Abrir Mapa <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO — CONTATO -->
+        <section class="py-20 md:py-28 bg-white border-t border-slate-100">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal-on-scroll">
+                <div class="bg-gradient-to-b from-slate-50 to-white rounded-3xl p-8 sm:p-14 border border-slate-200/80 shadow-soft space-y-6">
+                    
+                    <div class="w-14 h-14 rounded-2xl bg-navy-900 text-brand-300 mx-auto flex items-center justify-center text-2xl shadow-md">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-900 tracking-tight">
+                        Precisa falar com a Clínica Harmony?
+                    </h2>
+
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-xl mx-auto">
+                        Entre em contato para obter informações sobre consultas, atendimento e horários.
+                    </p>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                        <a href="tel:+559532243579" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-navy-900 hover:bg-slate-800 text-white font-bold text-base transition-all duration-200 shadow-card hover:shadow-floating active:scale-[0.98]">
+                            <i class="fa-solid fa-phone text-brand-300"></i>
+                            <span>Ligar para a clínica: (95) 3224-3579</span>
+                        </a>
+
+                        <a href="https://maps.app.goo.gl/XAr6tsk4i6M8VhqW9" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-semibold text-base border border-slate-200/90 transition-all duration-200 shadow-soft">
+                            <i class="fa-solid fa-map-location-dot text-brand-600"></i>
+                            <span>Ver no Google Maps</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy-950 text-slate-400 py-16 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-slate-800/80">
+                
+                <!-- Left Details -->
+                <div class="md:col-span-6 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-brand-400">
+                            <i class="fa-solid fa-hospital text-sm"></i>
+                        </div>
+                        <span class="text-lg font-bold text-white tracking-tight">CLÍNICA HARMONY</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed max-w-md">
+                        Av. Getúlio Vargas, 5272 - Centro<br>
+                        Boa Vista - RR, 69301-030<br>
+                        Telefone: <a href="tel:+559532243579" class="text-white hover:underline">(95) 3224-3579</a>
+                    </p>
+                </div>
+
+                <!-- Right Quick Links -->
+                <div class="md:col-span-6 flex flex-col md:items-end justify-between space-y-4">
+                    <nav class="flex flex-wrap gap-6 text-sm font-medium text-slate-300">
+                        <a href="#inicio" class="hover:text-white transition-colors">Início</a>
+                        <a href="#sobre" class="hover:text-white transition-colors">A Clínica</a>
+                        <a href="#atendimento" class="hover:text-white transition-colors">Atendimento</a>
+                        <a href="#avaliacoes" class="hover:text-white transition-colors">Avaliações</a>
+                        <a href="#localizacao" class="hover:text-white transition-colors">Localização</a>
+                    </nav>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8 text-center md:text-left flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>© 2026 Clínica Harmony. Todos os direitos reservados.</p>
+                <p class="text-slate-600">Policlínica em Boa Vista, Roraima</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript (Mobile Drawer & Scroll Observer) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const menuDrawer = document.getElementById('mobile-menu-drawer');
+            const menuIcon = document.getElementById('menu-icon');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            if (menuBtn && menuDrawer) {
+                menuBtn.addEventListener('click', () => {
+                    const isOpen = !menuDrawer.classList.contains('hidden');
+                    if (isOpen) {
+                        menuDrawer.classList.add('hidden');
+                        menuIcon.classList.remove('fa-xmark');
+                        menuIcon.classList.add('fa-bars');
+                        menuBtn.setAttribute('aria-expanded', 'false');
+                    } else {
+                        menuDrawer.classList.remove('hidden');
+                        menuIcon.classList.remove('fa-bars');
+                        menuIcon.classList.add('fa-xmark');
+                        menuBtn.setAttribute('aria-expanded', 'true');
+                    }
+                });
+
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        menuDrawer.classList.add('hidden');
+                        menuIcon.classList.remove('fa-xmark');
+                        menuIcon.classList.add('fa-bars');
+                        menuBtn.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+
+            // Scroll Reveal Observer (Discrete Micro-interactions)
+            const revealElements = document.querySelectorAll('.reveal-on-scroll');
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                root: null,
+                threshold: 0.12,
+                rootMargin: '0px 0px -40px 0px'
+            });
+
+            revealElements.forEach(el => revealObserver.observe(el));
+        });
+    </script>
+</body>
+</html>
